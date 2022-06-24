@@ -10,7 +10,7 @@
         <!-- Update these with your own fonts -->
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
         
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../everything/css/style.css">
 
     </head>
     <body>
@@ -23,22 +23,48 @@
             </button>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
                 </ul>
             </nav>
         </header>
         
+        
 
         
+        
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            canvas{
+                box-shadow: black 20px 10px 50px;
+            }
+        </style>    
+    </head>
+    
+    <body>
+        <h1>The Craven Snake Game</h1>
+        <button onClick="window.location.reload();">Restart</button>
+        
+        <canvas id="game" width="400" height="400"/>
+        <script src="../everything/snake.js"></script>
+        
+        
+       
         
         
         <!-- Footer -->
         <footer class="footer">
             <!-- replace with your own email address -->
-            <a href="mailto:hello@jane.dev" class="footer__link">hello@jane.dev</a>
+            <a href="mailto:josht.craven@gmail.com" class="footer__link">josht.craven@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://codepen.io">
@@ -64,7 +90,7 @@
         </footer>
         
         
-        <script src="js/index.js"></script>
+        <script src="../everything/js/index.js"></script>
         
     </body>
 </html>
